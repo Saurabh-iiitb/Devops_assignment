@@ -1,5 +1,4 @@
-
-    pipeline {
+pipeline {
   environment {
     registry = "saurabhs23/calculator1"
     registryCredential = 'docker-hub-credentials'
@@ -49,5 +48,8 @@
                   tailLog: true])
           }
         }
+       }
     }
   }
+
+
