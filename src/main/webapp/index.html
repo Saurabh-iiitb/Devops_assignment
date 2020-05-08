@@ -27,13 +27,13 @@
 		margin-bottom: 10px; 
 		text-align:center; 
 		width: 210px; 
-		color:green; 
+		color:black; 
 		border: solid black 2px; 
 		} 
 
 		input[type="button"] 
 		{ 
-		background-color:green; 
+		background-color:orange; 
 		color: black; 
 		border: solid black 2px; 
 		width:100% 
@@ -49,7 +49,7 @@
 </head> 
 <!-- create table -->
 <body> 
-	<div class = title >GeeksforGeeks Calculator</div> 
+	<div class = title > Calculator</div> 
 	<table border="1"> 
 		<tr> 
 			<td colspan="3"><input type="text" id="result"/></td> 
@@ -62,7 +62,7 @@
 			<td><input type="button" value="1" onclick="dis('1')"/> </td> 
 			<td><input type="button" value="2" onclick="dis('2')"/> </td> 
 			<td><input type="button" value="3" onclick="dis('3')"/> </td> 
-			<td><input type="button" value="/" onclick="dis('/')"/> </td> 
+			<!-- <td><input type="button" value="/" onclick="dis('/')"/> </td> -->
 		</tr> 
 		<tr> 
 			<td><input type="button" value="4" onclick="dis('4')"/> </td> 
@@ -80,8 +80,8 @@
 			<td><input type="button" value="." onclick="dis('.')"/> </td> 
 			<td><input type="button" value="0" onclick="dis('0')"/> </td> 
 			<!-- solve function call function solve to evaluate value -->
-			<td><input type="button" value="=" onclick="solve()"/> </td> 
-			<td><input type="button" value="*" onclick="dis('*')"/> </td> 
+			<!--<td><input type="button" value="=" onclick="solve()"/> </td> 
+			  <td><input type="button" value="*" onclick="dis('*')"/> </td> -->
 		</tr> 
 	</table> 
 </body> 
