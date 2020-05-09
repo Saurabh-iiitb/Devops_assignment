@@ -23,10 +23,10 @@ pipeline {
     stage('Deploy Image') {
       steps{
         script {
-          docker.withRegistry( '', registryCredential ) {
-            dockerImage.push()
-            dockerImageLatest.push()
-          }
+          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials')
+ 
+                  dockerImage.push("${env.BUILD_NUMBER}")
+                  dockerImageLatest.push("latest")  
         }
       }
     }
